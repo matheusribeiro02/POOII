@@ -1,0 +1,22 @@
+<div class="content">
+  <mat-card-title>Alunos</mat-card-title>
+  <br>
+  <mat-card-subtitle><br>Cadastrar Aluno</mat-card-subtitle>
+  <mat-divider></mat-divider>
+  <br>
+  <br>
+  <div class="input1">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome do Aluno</mat-label>
+      <input matInput id="nomealuno" required [(ngModel)]="aluno.nomealuno" name="nomealuno"
+        placeholder="Digite o nome do aluno">
+      <mat-icon matSuffix>edit</mat-icon>
+    </mat-form-field>
+  </div>
+  <div class="button1" (click)="salvar()">
+    Atualizar <img class="img-btn" src="assets/img/check_box.png">
+  </div>
+  <div class="button2" (click)="cancelar()">
+    Cancelar <img class="img-btn" src="assets/img/cancel.png">
+  </div>
+</div>
